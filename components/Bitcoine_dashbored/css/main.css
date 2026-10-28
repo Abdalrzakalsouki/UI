@@ -1,0 +1,491 @@
+/*General*/
+:root {
+  --main-color: #0d40c6;
+  --secondry-color: #b6c2d4;
+  --text-color: #8fa2bd;
+  --bg-color: #eef2fe;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+/*SideBar*/
+aside {
+  background-color: var(--main-color);
+  color: white;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 60px;
+  height: 100vh;
+  z-index: 1;
+}
+
+aside > div {
+  margin-top: 100px;
+}
+
+aside > div > i {
+  padding: 15px 10px 15px 15px;
+  margin-left: 7px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+aside > div > i:hover {
+  border-radius: 5px;
+  background-color: #1652f0;
+}
+
+/*Header*/
+header {
+  margin-left: 60px;
+  width: calc(100% - 60px);
+  border-bottom: 1px solid var(--secondry-color);
+  padding: 20px;
+}
+
+header > .row {
+  display: grid;
+  grid-template-columns: minmax(0%, 70%) minmax(40%, 70%);
+}
+
+@media screen and (max-width: 700px) {
+  header > .row {
+    display: block;
+  }
+}
+
+header > .row > .col:first-of-type {
+  display: flex;
+  gap: 5px;
+  justify-self: flex-start;
+  align-items: center;
+}
+
+header > .row > .col:first-of-type > i {
+  font-size: 30px;
+  color: var(--main-color);
+}
+header > .row > .col:first-of-type > a {
+  font-size: 25px;
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 650px) {
+  header > .row > .col:first-of-type {
+    justify-content: center;
+  }
+  header > .row > .col:first-of-type > i {
+    font-size: 25px;
+  }
+  header > .row > .col:first-of-type > a {
+    font-size: 15px;
+  }
+}
+
+header > .row > .col:nth-of-type(2) {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header > .row > .col:nth-of-type(2) > div {
+  margin-left: 10px;
+}
+
+header > .row > .col:nth-of-type(2) > div > button {
+  padding: 5px;
+  text-align: center;
+  border: none;
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+header > .row > .col:nth-of-type(2) > div > button:first-of-type {
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 100px;
+  color: var(--main-color);
+  background-color: var(--bg-color);
+}
+
+header > .row > .col:nth-of-type(2) > div > button:first-of-type > i {
+  margin-left: 10px;
+}
+
+header > .row > .col:nth-of-type(2) > div > button:last-of-type {
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px;
+  color: var(--text-color);
+}
+
+@media screen and (max-width: 650px) {
+  header > .row > .col:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+  }
+  header > .row > .col:nth-of-type(2) > div > button {
+    width: 80px;
+    height: 20px;
+    font-size: 10px;
+  }
+}
+
+header > .row > .col:nth-of-type(2) > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header > .row > .col:nth-of-type(2) > div > i:first-child {
+  font-size: 32px;
+  color: var(--main-color);
+}
+
+header > .row > .col:nth-of-type(2) > div > span {
+  margin-left: 10px;
+}
+
+header > .row > .col:nth-of-type(2) > div > i:last-child {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 650px) {
+  header > .row > .col:nth-of-type(2) > div {
+    margin-top: 10px;
+  }
+  header > .row > .col:nth-of-type(2) > div > i:first-child {
+    font-size: 20px;
+  }
+  header > .row > .col:nth-of-type(2) > div > span {
+    font-size: 10px;
+    margin-left: 5px;
+  }
+  header > .row > .col:nth-of-type(2) > div > i:last-child {
+    font-size: 11px;
+    margin-left: 5px;
+  }
+}
+
+/*Title*/
+#title {
+  margin-left: 120px;
+  margin-top: 20px;
+  color: var(--main-color);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#title > span {
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+@media screen and(max-width:  768px) {
+  #title {
+    font-size: 10px;
+    margin-left: 40%;
+  }
+  #title > span {
+    font-size: 10px;
+  }
+}
+
+/*Main*/
+main {
+  margin-left: 120px;
+  padding-right: 20px;
+}
+
+@media screen and(max-width:  768px) {
+  main {
+    padding-right: 10px;
+  }
+}
+main > .row {
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 8%;
+}
+
+@media screen and (max-width: 768px) {
+  main > .row {
+    display: block;
+  }
+}
+
+/*First Section*/
+main > .row > section:first-of-type > div:first-child {
+  display: flex;
+  gap: 20px;
+}
+
+main > .row > section:first-of-type > div:first-child > button {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 340px) {
+  main > .row > section:first-of-type > div:first-child > button {
+    height: 30px;
+    font-size: 10px;
+  }
+}
+
+main > .row > section:first-of-type > div:first-child > button:first-of-type {
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+}
+
+main > .row > section:first-of-type > div:first-child > button:last-of-type {
+  color: var(--main-color);
+  background-color: white;
+  border: 1px solid rgba(182, 194, 212, 0.5);
+}
+
+section:first-of-type > div:nth-child(2) > div:nth-child(n + 2) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+section:first-of-type > div:nth-child(2) > label {
+  padding: 10px 0 10px 0;
+  display: block;
+}
+
+section:first-of-type > div:nth-child(2) > div > select {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--bg-color);
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+section:first-of-type > div:nth-child(2) > div > .block-span {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--bg-color);
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 340px) {
+  section:first-of-type > div:nth-child(2) > div:nth-child(n + 2) {
+    display: block;
+    font-size: 10px;
+  }
+  section:first-of-type > div:nth-child(2) > div > .block-span {
+    display: block;
+    font-size: 10px;
+  }
+  section:first-of-type > div:nth-child(2) > label {
+    font-size: 10px;
+    text-align: center;
+  }
+}
+
+#month-span {
+  color: var(--text-color);
+  flex: 4;
+}
+
+@media screen and (max-width: 340px) {
+  #month-span {
+    display: block;
+    text-align: center;
+  }
+  #remaning-span {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+section:first-of-type > div:nth-child(2) > button {
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  border: none;
+  background-color: #10d876;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 340px) {
+  section:first-of-type > div:nth-child(2) > button {
+    font-size: 10px;
+  }
+}
+
+section:first-of-type > div:nth-child(2) > div:last-child {
+  margin-top: 70px;
+  display: flex;
+  color: var(--text-color);
+  flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+  section:first-of-type > div:nth-child(2) > div:last-child {
+    font-size: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+
+/*Second Section*/
+section:last-of-type > .box-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section:last-of-type > .box-info > .avatar > img {
+  max-width: 40px;
+  max-height: 40px;
+  display: inline-block;
+}
+
+@media screen and (max-width: 800px) {
+  section:last-of-type > .box-info > .avatar > img {
+    display: none;
+  }
+}
+section:last-of-type > .box-info > .info {
+  padding-left: 10px;
+  line-height: 1.5;
+}
+
+section:last-of-type > .box-info > div:nth-child(2) {
+  flex: 1;
+  text-align: start;
+}
+
+@media screen and (max-width: 340px) {
+  section:last-of-type > .box-info {
+    display: block;
+    text-align: center;
+  }
+  section:last-of-type > .box-info > div:nth-child(2) {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+section:last-of-type > .box-info > div:nth-child(3) {
+  direction: rtl;
+  margin-right: 10px;
+}
+
+section:last-of-type > .box-info > div:nth-child(3) > h6 {
+  margin-right: 15px;
+}
+
+section:last-of-type > .box-info > .info > a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  section:last-of-type > .box-info > .avatar > img {
+    display: none;
+  }
+
+  section:last-of-type > .box-info > div:nth-child(3) {
+    direction: ltr;
+    margin-right: 0;
+  }
+  section:last-of-type > .box-info > div:nth-child(3) > h6 {
+    margin-right: 0;
+  }
+  section:last-of-type > .box-info > .info {
+    font-size: 10px;
+  }
+  section:last-of-type > .box-info > .info > a {
+    font-size: 8px;
+  }
+}
+
+section:last-of-type > div > .boxes {
+  width: 100%;
+  padding: 18px;
+  background-color: var(--bg-color);
+  border: none;
+  outline: none;
+  margin-top: 13px;
+  display: flex;
+  border-radius: 5px;
+  flex-wrap: wrap;
+}
+
+section:last-of-type > div > div > span {
+  font-size: 15px;
+  display: inline-block;
+}
+
+section:last-of-type > div > div > span {
+  text-align: left;
+  color: var(--text-color);
+  flex: 1;
+}
+
+section:last-of-type > div > div > span:last-child {
+  flex: 1;
+}
+
+section:last-of-type > div > div:first-child > span {
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+section:last-of-type > div > div:nth-child(6) > span:last-child {
+  color: red;
+}
+
+@media screen and (max-width: 768px) {
+  section:last-of-type > div > div > span {
+    font-size: 10px;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  section:last-of-type > div > .boxes {
+    display: block;
+  }
+  section:last-of-type > div > div > span {
+    text-align: center;
+  }
+  section:last-of-type > div > div > span:nth-of-type(n + 2) {
+    margin-top: 10px;
+  }
+}
