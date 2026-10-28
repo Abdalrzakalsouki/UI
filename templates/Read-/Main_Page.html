@@ -1,0 +1,96 @@
+﻿<!--
+Main page
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="A litterautre webiste for readers and writers" />
+    <meta name="author" content="ABDULRAZZAK ALSSSOUKI" />
+    <meta name="keywords" content="Reading,Writing, readers, writers, litterautre, books" />
+    <meta http-equiv="refresh" content="60" />
+    <meta name="viewport" content="width=device-width intiail-scale= 0.1" />
+    <link rel="stylesheet" type="text/css" href="../Style/Main.css">
+    <title>Read_Main_Page</title>
+</head>
+<body>
+    <navbar>
+        <nav>
+            <spane> Read || The biggest stage for litterautre </spane>
+            <spane> <a href="Loging_Page.html" target="_blank"> LogIn </a></spane>
+            <spane> <a href="Registring_Page.html" target="_blank"> RegisterReader </a></spane>
+            <spane> <a href="Read_RegsiterPage_Writers.html" target="_blank"> RegisterWriter </a></spane>
+        </nav>
+    </navbar>
+    <img id="Cover_Image" name="Read_CoverImage" src="Read_CoverImage.JPG" />
+    <aside>
+        <section>
+            <article>
+                <h1 id='h1-color'> Read || The biggest stage for litterautre</h1>
+                <p>
+                    Read is a group which work to serve the litteraute
+                </p>
+                <button id="Quotes" name="Quotes" onclick="Quests()">Quotes</button>
+            </article>
+        </section>
+    </aside>
+    <form method="get" target="_blank" action="WhoAreWe.html">
+        <button id="first">Who are we</button>
+
+    </form>
+    <section class="Writers_Readers">
+        <article>
+            <h2> For Writers</h2>
+            <p>
+                Writers can upload their books on our socail media which is degined specialy for the readers,
+                by this, writers can get a free advrtasiment and support for life time keeper!
+            </p>
+        </article>
+    </section>
+    <form method="get" action="Loging_page.html" target="_blank">
+        <button class="first">LogIn - Writer</button>
+    </form>
+    <form method="get" action="Read_RegsiterPage_Writers.html" target="_blank">
+        <button class="first">Register - Writer</button>
+    </form>
+    <section class="Writers_Readers">
+        <article>
+            <h2> For Readers</h2>
+            <p>
+                Readers can get acess for thousands of newest book with a totally legal way and without
+                any charge, reader can review the work and contact with the writer about it if he got the premission
+                and much more!
+            </p>
+        </article>
+    </section>
+    <form method="get" action="Loging_page.html" target="_blank">
+        <button class="first">LogIn - Reader</button>
+    </form>
+    <form method="get" action="Registring_page.html" target="_blank">
+        <button class="first">Register - Reader</button>
+    </form>
+    <section>
+
+        <iframe src="https://player.vimeo.com/video/195192168" width="800" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+    </section>
+    <hr />
+    <section>
+        <form name="form1" method="post" action="">
+            <h1 id="h1"> Word Counter</h1>
+            <textarea name="inputString" id="inputString" cols="50" rows="4">This is a block of text with a number of words. How many words? Click the button to find out.</textarea>
+            <br>
+            <input id="butt" class ="size" type="button" name="Convert" value="Count Words" onclick="countWords();">
+            <input class ="size"name="wordcount" id="wordcount" type="text" value="" size="6">
+            </form>
+    </section>
+    <article id="article">
+        <h2> How "Read" Work?</h2>
+        <p>
+            Simply Read comapain two main elements, an online library on the webiste such as "Amazon" but with a free prices
+            and a special social network for only readers and writers to get in touch with the litterautre contant
+        <p> Read work on the charity generoisuty   </p>
+    </article>
+    <script src="Main_JavaScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+﻿body {
+
+    background-image:url(../Html5/888.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #cccccc;
+    background-size: cover;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    z-index: auto;
+}
+p{
+    text-align:center;
+    margin-right: 400px;
+}
+
+    button:hover {
+        background-color: #41ca0b;
+        border: 2px thick white;
+    }
+
+form {
+    text-align: center;
+    margin-left: 400px;
+}
+
+h3 {
+    text-align: center;
+    margin-left: 400px;
+
+}
+
+p {
+    margin-left: 810px;
+    font-size: 20px;
+}
+.normal{
+
+}
+.Writers {
+    display: grid;
+    grid-template-columns: repeat(3,1);
+    grid-gap: 1em;
+    
+
+}
+video{
+    align-content: center;
+}

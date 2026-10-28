@@ -1,0 +1,44 @@
+﻿body {
+    background-image: url("../Html5/Read_3.jpg");
+    background-color: #cccccc;
+    background-size:cover; 
+    color:white;
+}
+h3{
+   margin-left:510px;
+   margin-top:200px;
+   font-size:30px;
+}
+form{
+    margin-left:520px;
+    font-size:20px;
+    color:white;
+}
+#rest{
+    display:block;
+    margin-top:10px;
+    width: 170px;
+    height: 30px;
+}
+#rest:hover{
+   background-color: #b40b0b;
+}
+p {
+    position:absolute;
+    font-size:25px;
+    text-align:center;
+    box-sizing:border-box;
+    border: 2px solid white;
+    z-index:20;
+    box-shadow: initial;
+    background-color: black;
+    text-anchor:end;
+    text-overflow:ellipsis;
+    max-height: 90px;
+    max-width:620px;
+    margin-left: 120px;
+    margin-top:100px;
+}
+
+
+}

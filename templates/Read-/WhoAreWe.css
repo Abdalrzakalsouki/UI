@@ -1,0 +1,22 @@
+﻿body {
+    background-image: url(../Html5/990.jfif);
+    backface-visibility: visible;
+    background-repeat: no-repeat;
+    background-size: 1600px 700px;
+}
+section {
+    color: black;
+    border: 1px solid white;
+    z-index: 400;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    background-attachment: fixed;
+    margin-top: 200px;
+    text-shadow: 20px,20px,20px,20px white;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(4px);
+    font-weight: bold;
+    height: 180px;
+}

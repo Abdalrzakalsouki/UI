@@ -1,0 +1,7 @@
+﻿$varibale: red;
+button{
+    background:blue;
+    &:hover{
+        background: green;
+    }
+}
