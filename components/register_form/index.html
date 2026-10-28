@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Register form</title>
+  </head>
+  <body>
+    <form method="post">
+      <div class="col">
+        <div>
+          <label for="user-name">User Name <span>*</span></label>
+          <input
+            type="text"
+            id="user-name"
+            name="user-name"
+            required
+            placeholder="Type your name in English only"
+          />
+          <label for="user-password">Password <span>*</span></label>
+          <input
+            type="password"
+            id="user-password"
+            name="user-password"
+            placeholder="Type a complex password"
+            required
+          />
+          <label for="user-email">Email <span>*</span></label>
+          <input
+            type="email"
+            id="user-email"
+            name="user-email"
+            required
+            placeholder="Type a valid email"
+          />
+        </div>
+        <div>
+          <label for="user-phone">Phone</label>
+          <input
+            type="text"
+            id="user-phone"
+            name="user-phone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required
+          />
+          <label for="brief">Brief</label>
+          <textarea id="brief" name="brief" required></textarea>
+        </div>
+      </div>
+      <button type="button" value="Register">Register</button>
+    </form>
+  </body>
+</html>
